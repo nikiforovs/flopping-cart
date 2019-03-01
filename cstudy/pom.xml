@@ -1,0 +1,137 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cstudy</groupId>
+  <artifactId>cstudy</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+  <dependencies>
+  	<!-- https://mvnrepository.com/artifact/junit/junit -->
+	<dependency>
+    	<groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+    	<version>4.12</version>
+    	<scope>test</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client -->
+	<dependency>
+    	<groupId>org.glassfish.jersey.core</groupId>
+    	<artifactId>jersey-client</artifactId>
+    	<version>2.28</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-server -->
+	<dependency>
+    	<groupId>org.glassfish.jersey.core</groupId>
+    	<artifactId>jersey-server</artifactId>
+    	<version>2.28</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.containers/jersey-container-servlet -->
+	<dependency>
+    	<groupId>org.glassfish.jersey.containers</groupId>
+    	<artifactId>jersey-container-servlet</artifactId>
+    	<version>2.28</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.containers/jersey-container-servlet-core -->
+	<dependency>
+		<groupId>org.glassfish.jersey.containers</groupId>
+    	<artifactId>jersey-container-servlet-core</artifactId>
+    	<version>2.28</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-common -->
+		<dependency>
+    	<groupId>org.glassfish.jersey.core</groupId>
+    	<artifactId>jersey-common</artifactId>
+    	<version>2.28</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.inject/project -->
+	<dependency>
+   		<groupId>org.glassfish.jersey.inject</groupId>
+    	<artifactId>project</artifactId>
+    	<version>2.28</version>
+    	<type>pom</type>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.inject/jersey-hk2 -->
+	<dependency>
+    	<groupId>org.glassfish.jersey.inject</groupId>
+    	<artifactId>jersey-hk2</artifactId>
+    	<version>2.28</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.media/jersey-media-json-jackson -->
+	<dependency>
+    	<groupId>org.glassfish.jersey.media</groupId>
+    	<artifactId>jersey-media-json-jackson</artifactId>
+    	<version>2.28</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+	<dependency>
+    	<groupId>javax.xml.bind</groupId>
+    	<artifactId>jaxb-api</artifactId>
+    	<version>2.3.0</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-xjc -->
+	<dependency>
+    	<groupId>com.sun.xml.bind</groupId>
+    	<artifactId>jaxb-xjc</artifactId>
+    	<version>2.3.2</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-core -->
+	<dependency>
+    	<groupId>org.glassfish.jaxb</groupId>
+    	<artifactId>jaxb-core</artifactId>
+    	<version>2.3.0.1</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/javax.xml/jaxb-impl -->
+	<dependency>
+    	<groupId>javax.xml</groupId>
+    	<artifactId>jaxb-impl</artifactId>
+    	<version>2.1</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+	<dependency>
+    	<groupId>javax.servlet</groupId>
+    	<artifactId>servlet-api</artifactId>
+    	<version>2.5</version>
+    	<scope>provided</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/javax.inject/javax.inject -->
+	<dependency>
+    	<groupId>javax.inject</groupId>
+    	<artifactId>javax.inject</artifactId>
+    	<version>1</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/javax.activation/activation -->
+	<dependency>
+    	<groupId>javax.activation</groupId>
+    	<artifactId>activation</artifactId>
+    	<version>1.1.1</version>
+	</dependency>
+	<!-- Utils -->
+	<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+	<dependency>
+    	<groupId>org.apache.commons</groupId>
+    	<artifactId>commons-lang3</artifactId>
+    	<version>3.8.1</version>
+	</dependency>
+  </dependencies>
+  
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.1</version>
+        <configuration>
+          <warSourceDirectory>WebContent</warSourceDirectory>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
